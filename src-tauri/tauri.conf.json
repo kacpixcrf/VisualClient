@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Visual Client",
+  "version": "26.3.0",
+  "identifier": "pl.kacpixcrf.visualclient",
+  "build": {
+    "beforeDevCommand": "bun run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "bun run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Visual Client",
+        "width": 1280,
+        "height": 720,
+        "minWidth": 1084,
+        "minHeight": 691,
+        "decorations": false,
+        "transparent": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "createUpdaterArtifacts": true,
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  },
+  "plugins": {
+    "updater": {
+      "endpoints": [
+        "https://github.com/kacpixcrf/VisualClient/releases/latest/download/latest.json"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDY2OENDNDdCQUU1MTlDRUQKUldUdG5GR3VlOFNNWnRqbTNtNXdTUzQydFI0VkNVUGdyTkFTb2w1UWFudUVuMEplTFJUS3YvenIK"
+    }
+  }
+}

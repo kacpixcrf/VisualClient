@@ -1,0 +1,15 @@
+:root {
+  --bg-shell: #27292e;
+  --bg-content: #16181c;
+  --border-line: #42444a;
+  --text-main: #f0f0f0;
+  --text-muted: #9ca3af;
+  --accent: #1ad96a;
+  --success: #1ad96a;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --text-secondary: #b0bac4;
+
+  --danger: #ed4245;
+}
